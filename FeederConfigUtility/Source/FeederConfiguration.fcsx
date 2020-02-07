@@ -1,0 +1,2289 @@
+<root>
+<document scada='1' panel2DSCADA='6' panel3DSCADA='7' panelPropsSCADA='3' panelConsoleSCADA='0' panelDataRecorderSCADA='7' playbackSCADA='2' ShouldAutoStartSCADA='0' ShouldLockCameraSCADA='1' ShouldBundleSCADA='1' SCADAProgramTitle='FeederConfiguration' schema='102' license='1,Dev User,H1YQFU' title='' description='' fcversion='524800' target='SCADA.SCADA.GENERIC' >
+	<config data='' clkspd='100000000' simspd='1' usewdt='0' constif='0' Use3V3='0' />
+	<plugins >
+		<dll_models enabled='1' />
+	</plugins>
+	<supplement use='0' head='' body='' />
+	<debug />
+	<traces />
+	<ghost >
+		<FK2 >
+			<data name='FK2D0' port='4294967295' pin='4294967295' />
+			<data name='FK2D1' port='4294967295' pin='4294967295' />
+			<data name='FK2D2' port='4294967295' pin='4294967295' />
+			<data name='FK2D3' port='4294967295' pin='4294967295' />
+			<data name='FK2D4' port='4294967295' pin='4294967295' />
+			<data name='FK2D5' port='4294967295' pin='4294967295' />
+			<data name='FK2D6' port='4294967295' pin='4294967295' />
+			<data name='FK2D7' port='4294967295' pin='4294967295' />
+			<data name='FK2D8' port='4294967295' pin='4294967295' />
+			<data name='FK2D9' port='4294967295' pin='4294967295' />
+			<data name='FK2D10' port='4294967295' pin='4294967295' />
+			<data name='FK2D11' port='4294967295' pin='4294967295' />
+			<data name='FK2D12' port='4294967295' pin='4294967295' />
+			<data name='FK2D13' port='4294967295' pin='4294967295' />
+			<data name='FK2D14' port='4294967295' pin='4294967295' />
+			<data name='FK2D15' port='4294967295' pin='4294967295' />
+			<data name='FK2A0' port='4294967295' pin='4294967295' />
+			<data name='FK2A1' port='4294967295' pin='4294967295' />
+			<data name='FK2A2' port='4294967295' pin='4294967295' />
+			<data name='FK2A3' port='4294967295' pin='4294967295' />
+			<data name='FK2A4' port='4294967295' pin='4294967295' />
+			<data name='FK2A5' port='4294967295' pin='4294967295' />
+		</FK2>
+		<ICD >
+			<data name='AnalogPrescaleValue' value='19' />
+			<data name='DigitalSampleRate' value='100000' />
+			<data name='BreakpointCount' value='8' />
+			<data name='CallStackDepthCount' value='8' />
+			<data name='ClockPort' value='4095' />
+			<data name='ClockPin' value='0' />
+			<data name='DataPort' value='4095' />
+			<data name='DataPin' value='0' />
+			<data name='UseDefaultPins' value='1' />
+			<data name='WrapEnabled' value='1' />
+			<data name='CommsDelayOverridden' value='0' />
+			<data name='CommsDelay' value='2' />
+			<data name='CalculatedCommsDelay' value='2' />
+			<data name='AnalogEB2PrescaleValue' value='2' />
+			<data name='DigitalEB2SampleRate' value='100000' />
+		</ICD>
+		<pins >
+			<digital A='0' B='0' C='0' D='0' E='0' F='0' G='0' H='0' I='0' J='0' K='0' L='0' M='0' N='0' O='0' P='0' Q='0' R='0' S='0' T='0' U='0' V='0' W='0' X='0' Y='0' Z='0' />
+			<analog A='0' B='0' C='0' D='0' E='0' F='0' G='0' H='0' I='0' J='0' K='0' L='0' M='0' N='0' O='0' P='0' Q='0' R='0' S='0' T='0' U='0' V='0' W='0' X='0' Y='0' Z='0' />
+		</pins>
+	</ghost>
+	<components >
+		<settings autoimg='1' center='1' unitscale='0' fixedscale='0' fixedx='1' fixedy='1' fixedz='1' headcode='0' />
+		<definition guid='4f801c2d-fc69-482d-b968-d6ef3b124a0b' vstate='40' vmin='0' vmaj='1' srcleaf='' visiblename='' description='' category='' catenable='1' author='' manuname='' manucode='' sysinfo='0' keywords='' dynamic='1' scadaCompatible='1' embeddedCompatible='1' iconpath='' />
+		<component class_type='root' codename='panel' x='0' y='0' z='0' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='0' poslock='0' >
+			<resources />
+			<properties >
+				<property name='COM Port' target='COMPort1::COM_port' typeid='16' hidden='0' locked='0' info='Selects which port to communicate with, only lists ports which are currently available. ' filter='001COM1
+004COM4' />
+				<property name='Saved Settings' folder='property_1' hidden='0' >
+					<property name='RS485 Address' target='RsAd' typeid='21' hidden='0' locked='1' info='' />
+					<property name='Min Film Speed' target='MinFilmSpeed' typeid='21' hidden='0' locked='1' info='' />
+					<property name='Max Film Speed' target='MaxFilmSpeed' typeid='21' hidden='0' locked='1' info='' />
+					<property name='Servo Speed' target='ServoSpeed' typeid='21' hidden='0' locked='1' info='' />
+					<property name='Servo Pull Position' target='ServoPullPosition' typeid='21' hidden='0' locked='1' info='' />
+					<property name='Servo Push Position' target='ServoPushPosition' typeid='21' hidden='0' locked='1' info='' />
+					<property name='IR Sensor Enable' target='IRSensorEnable' typeid='7' hidden='0' locked='1' info='' />
+					<property name='Sensor Threshold' target='SensorThreshold' typeid='21' hidden='0' locked='1' info='' />
+					<property name='Sensor Delay' target='SensorDelayP' typeid='21' hidden='0' locked='1' info='' />
+					<property name='Hole Pitch' target='HolePitchP' typeid='21' hidden='0' locked='1' info='' />
+					<property name='Film Backoff' target='FilmBackoffP' typeid='21' hidden='0' locked='1' info='' />
+					<property name='Feeder Cycles' target='FeederCyclesP' typeid='21' hidden='0' locked='1' info='' />
+					<property name='Stepper Revolutions' target='StepperRevolutions' typeid='21' hidden='0' locked='1' info='' />
+					<property name='Beep Enabled' target='BeepEnabled' typeid='7' hidden='0' locked='1' info='' />
+					<property name='IR Sensor Filter Enable' target='IRSensorFilterEnable' typeid='7' hidden='0' locked='1' info='' />
+				</property>
+			</properties>
+			<values >
+				<value target='COMPort1::COM_port' data='003' />
+				<value target='RsAd' data='1' />
+				<value target='MinFilmSpeed' data='255' />
+				<value target='MaxFilmSpeed' data='100' />
+				<value target='ServoSpeed' data='4' />
+				<value target='ServoPullPosition' data='200' />
+				<value target='ServoPushPosition' data='20' />
+				<value target='IRSensorEnable' data='1' />
+				<value target='SensorThreshold' data='3' />
+				<value target='SensorDelayP' data='15' />
+				<value target='HolePitchP' data='4' />
+				<value target='FilmBackoffP' data='2' />
+				<value target='FeederCyclesP' data='1' />
+				<value target='StepperRevolutions' data='0' />
+				<value target='BeepEnabled' data='1' />
+				<value target='IRSensorFilterEnable' data='1' />
+			</values>
+			<events >
+				<event class='Simulation' event='Stop' target='Ev_Stop' />
+				<event class='Simulation' event='Start' target='Ev_Start' />
+			</events>
+			<apis />
+			<variables >
+				<variable public='0' >
+					<def class_type='variable' name='PushDelay' type='u8' description='' isconst='0' isinit='1' usrinit='200' setinit='200' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='MaxFilmSp' type='u8' description='' isconst='0' isinit='1' usrinit='100' setinit='100' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='ServoPull' type='u8' description='' isconst='0' isinit='1' usrinit='200' setinit='200' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='HolePitch' type='u8' description='' isconst='0' isinit='1' usrinit='4' setinit='4' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='Address' type='u8' description='' isconst='0' isinit='1' usrinit='1' setinit='1' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='ServoPush' type='u8' description='' isconst='0' isinit='1' usrinit='20' setinit='20' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='FilmBackoff' type='u8' description='' isconst='0' isinit='1' usrinit='2' setinit='2' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='false' type='b1' description='' isconst='1' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='IrSensor' type='b1' description='' isconst='0' isinit='1' usrinit='1' setinit='1' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='SensorThresh' type='u8' description='' isconst='0' isinit='1' usrinit='3' setinit='3' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='ServoSp' type='u8' description='' isconst='0' isinit='1' usrinit='4' setinit='4' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='SensorDelay' type='u8' description='' isconst='0' isinit='1' usrinit='15' setinit='15' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='NewAddress' type='u8' description='' isconst='0' isinit='1' usrinit='1' setinit='1' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='Beep' type='b1' description='' isconst='0' isinit='1' usrinit='1' setinit='1' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='Idx' type='u8' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='FeedCycles' type='u8' description='' isconst='0' isinit='1' usrinit='1' setinit='1' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='Ret' type='b1' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='StepperRevs' type='u8' description='' isconst='0' isinit='1' usrinit='0' setinit='0' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='MinFilmSp' type='u8' description='' isconst='0' isinit='1' usrinit='255' setinit='255' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='out' type='u8' description='' isconst='0' isinit='0' usrinit='&quot;&quot;' setinit='' >
+						<array size='6' />
+					</def>
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='IrFilter' type='b1' description='' isconst='0' isinit='1' usrinit='1' setinit='1' />
+				</variable>
+				<variable public='0' >
+					<def class_type='variable' name='true' type='b1' description='' isconst='1' isinit='1' usrinit='1' setinit='1' />
+				</variable>
+			</variables>
+			<macros >
+				<macro >
+					<flowline name='Ev_Stop' description='Broadcast to all components that simulation has stopped' >
+						<return name='Return' type='u32' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='COMPort1' macro='ClosePort' />
+					</flowline>
+				</macro>
+				<macro >
+					<flowline name='LED' description='' >
+						<return name='Return' type='v0' description='' isconst='0' isinit='0' usrinit='' setinit='' />
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='l1' macro='TurnOff' />
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='l2' macro='TurnOff' />
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='l3' macro='TurnOff' />
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='l4' macro='TurnOff' />
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='l5' macro='TurnOff' />
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='l6' macro='TurnOff' />
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='l7' macro='TurnOff' />
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='l8' macro='TurnOff' />
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='l9' macro='TurnOff' />
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='l10' macro='TurnOff' />
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='l11' macro='TurnOff' />
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='l12' macro='TurnOff' />
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='l13' macro='TurnOff' />
+						<command class_type='switch' title='Switch' textarea='36,25,36,25' cmdcolor='12615680' cmdcolor_sec='15376912' exp='Idx' >
+							<case >
+								<flowline />
+							</case>
+							<case exp='1' >
+								<flowline >
+									<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='l2' macro='TurnOn' />
+								</flowline>
+							</case>
+							<case exp='2' >
+								<flowline >
+									<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='l3' macro='TurnOn' />
+								</flowline>
+							</case>
+							<case exp='3' >
+								<flowline >
+									<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='l4' macro='TurnOn' />
+								</flowline>
+							</case>
+							<case exp='4' >
+								<flowline >
+									<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='l5' macro='TurnOn' />
+								</flowline>
+							</case>
+							<case exp='5' >
+								<flowline >
+									<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='l6' macro='TurnOn' />
+								</flowline>
+							</case>
+							<case exp='6' >
+								<flowline >
+									<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='l7' macro='TurnOn' />
+								</flowline>
+							</case>
+							<case exp='7' >
+								<flowline >
+									<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='l8' macro='TurnOn' />
+								</flowline>
+							</case>
+							<case exp='8' >
+								<flowline >
+									<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='l9' macro='TurnOn' />
+								</flowline>
+							</case>
+							<case exp='9' >
+								<flowline >
+									<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='l10' macro='TurnOn' />
+								</flowline>
+							</case>
+							<case exp='10' >
+								<flowline >
+									<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='l11' macro='TurnOn' />
+								</flowline>
+							</case>
+						</command>
+						<command class_type='switch' title='Switch' textarea='36,25,36,25' cmdcolor='12615680' cmdcolor_sec='15376912' exp='Idx' >
+							<case >
+								<flowline />
+							</case>
+							<case exp='11' >
+								<flowline >
+									<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='l12' macro='TurnOn' />
+								</flowline>
+							</case>
+							<case exp='12' >
+								<flowline >
+									<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='l13' macro='TurnOn' />
+								</flowline>
+							</case>
+							<case exp='0' >
+								<flowline >
+									<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='l1' macro='TurnOn' />
+								</flowline>
+							</case>
+						</command>
+					</flowline>
+				</macro>
+				<macro >
+					<flowline name='Display' description='' >
+						<return name='Return' type='v0' description='' isconst='0' isinit='0' usrinit='' setinit='' />
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='g1' macro='DisplayAsInt' >
+							<argument exp='Address' />
+						</command>
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='g2' macro='DisplayAsInt' >
+							<argument exp='NewAddress' />
+						</command>
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='g3' macro='DisplayAsInt' >
+							<argument exp='MinFilmSp' />
+						</command>
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='g4' macro='DisplayAsInt' >
+							<argument exp='MaxFilmSp' />
+						</command>
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='g5' macro='DisplayAsInt' >
+							<argument exp='ServoSp' />
+						</command>
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='g6' macro='DisplayAsInt' >
+							<argument exp='StepperRevs' />
+						</command>
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='g7' macro='DisplayAsInt' >
+							<argument exp='ServoPull' />
+						</command>
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='g8' macro='DisplayAsInt' >
+							<argument exp='ServoPush' />
+						</command>
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='g9' macro='DisplayAsInt' >
+							<argument exp='HolePitch' />
+						</command>
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='g10' macro='DisplayAsInt' >
+							<argument exp='FilmBackoff' />
+						</command>
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='g11' macro='DisplayAsInt' >
+							<argument exp='FeedCycles' />
+						</command>
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='g12' macro='DisplayAsInt' >
+							<argument exp='SensorThresh' />
+						</command>
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='g13' macro='DisplayAsInt' >
+							<argument exp='SensorDelay' />
+						</command>
+					</flowline>
+				</macro>
+				<macro >
+					<flowline name='Adjust' description='' >
+						<return name='Return' type='v0' description='' isconst='0' isinit='0' usrinit='' setinit='' />
+						<param name='Inc' type='b1' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+						<command class_type='switch' title='Switch' textarea='36,25,36,25' cmdcolor='12615680' cmdcolor_sec='15376912' exp='Idx' >
+							<case >
+								<flowline />
+							</case>
+							<case exp='1' >
+								<flowline >
+									<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='.Inc' swap='0' >
+										<flowline >
+											<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+												<exp exp='NewAddress = NewAddress + 1' />
+											</command>
+										</flowline>
+										<flowline >
+											<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+												<exp exp='NewAddress = NewAddress - 1' />
+											</command>
+										</flowline>
+									</command>
+								</flowline>
+							</case>
+							<case exp='2' >
+								<flowline >
+									<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='.Inc' swap='0' >
+										<flowline >
+											<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='MinFilmSp = 255' swap='0' >
+												<flowline >
+													<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+														<exp exp='MinFilmSp = 1' />
+													</command>
+												</flowline>
+												<flowline >
+													<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+														<exp exp='MinFilmSp = MinFilmSp + 1' />
+													</command>
+												</flowline>
+											</command>
+										</flowline>
+										<flowline >
+											<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='MinFilmSp = 1' swap='0' >
+												<flowline >
+													<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+														<exp exp='MinFilmSp = 255' />
+													</command>
+												</flowline>
+												<flowline >
+													<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+														<exp exp='MinFilmSp = MinFilmSp - 1' />
+													</command>
+												</flowline>
+											</command>
+										</flowline>
+									</command>
+								</flowline>
+							</case>
+							<case exp='3' >
+								<flowline >
+									<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='.Inc' swap='0' >
+										<flowline >
+											<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='MaxFilmSp = 255' swap='0' >
+												<flowline >
+													<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+														<exp exp='MaxFilmSp = 1' />
+													</command>
+												</flowline>
+												<flowline >
+													<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+														<exp exp='MaxFilmSp = MaxFilmSp + 1' />
+													</command>
+												</flowline>
+											</command>
+										</flowline>
+										<flowline >
+											<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='MaxFilmSp = 1' swap='0' >
+												<flowline >
+													<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+														<exp exp='MaxFilmSp = 255' />
+													</command>
+												</flowline>
+												<flowline >
+													<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+														<exp exp='MaxFilmSp = MaxFilmSp - 1' />
+													</command>
+												</flowline>
+											</command>
+										</flowline>
+									</command>
+								</flowline>
+							</case>
+							<case exp='4' >
+								<flowline >
+									<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='.Inc' swap='0' >
+										<flowline >
+											<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='ServoSp = 255' swap='0' >
+												<flowline >
+													<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+														<exp exp='ServoSp = 1' />
+													</command>
+												</flowline>
+												<flowline >
+													<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+														<exp exp='ServoSp = ServoSp + 1' />
+													</command>
+												</flowline>
+											</command>
+										</flowline>
+										<flowline >
+											<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='ServoSp = 1' swap='0' >
+												<flowline >
+													<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+														<exp exp='ServoSp = 255' />
+													</command>
+												</flowline>
+												<flowline >
+													<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+														<exp exp='ServoSp = ServoSp - 1' />
+													</command>
+												</flowline>
+											</command>
+										</flowline>
+									</command>
+								</flowline>
+							</case>
+							<case exp='5' >
+								<flowline >
+									<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='.Inc' swap='0' >
+										<flowline >
+											<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+												<exp exp='StepperRevs = StepperRevs + 1' />
+											</command>
+										</flowline>
+										<flowline >
+											<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+												<exp exp='StepperRevs = StepperRevs - 1' />
+											</command>
+										</flowline>
+									</command>
+								</flowline>
+							</case>
+							<case exp='6' >
+								<flowline >
+									<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='.Inc' swap='0' >
+										<flowline >
+											<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='ServoPull = 255' swap='0' >
+												<flowline >
+													<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+														<exp exp='ServoPull = 128' />
+													</command>
+												</flowline>
+												<flowline >
+													<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+														<exp exp='ServoPull = ServoPull + 1' />
+													</command>
+												</flowline>
+											</command>
+										</flowline>
+										<flowline >
+											<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='ServoPull = 128' swap='0' >
+												<flowline >
+													<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+														<exp exp='ServoPull = 255' />
+													</command>
+												</flowline>
+												<flowline >
+													<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+														<exp exp='ServoPull = ServoPull - 1' />
+													</command>
+												</flowline>
+											</command>
+										</flowline>
+									</command>
+								</flowline>
+							</case>
+							<case exp='7' >
+								<flowline >
+									<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='.Inc' swap='0' >
+										<flowline >
+											<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='ServoPush = 128' swap='0' >
+												<flowline >
+													<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+														<exp exp='ServoPull = 0' />
+													</command>
+												</flowline>
+												<flowline >
+													<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+														<exp exp='ServoPush = ServoPush + 1' />
+													</command>
+												</flowline>
+											</command>
+										</flowline>
+										<flowline >
+											<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='ServoPush = 0' swap='0' >
+												<flowline >
+													<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+														<exp exp='ServoPush = 128' />
+													</command>
+												</flowline>
+												<flowline >
+													<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+														<exp exp='ServoPush = ServoPush - 1' />
+													</command>
+												</flowline>
+											</command>
+										</flowline>
+									</command>
+								</flowline>
+							</case>
+							<case exp='8' >
+								<flowline >
+									<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='.Inc' swap='0' >
+										<flowline >
+											<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+												<exp exp='HolePitch = HolePitch + 1' />
+											</command>
+										</flowline>
+										<flowline >
+											<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+												<exp exp='HolePitch = HolePitch - 1' />
+											</command>
+										</flowline>
+									</command>
+								</flowline>
+							</case>
+							<case exp='9' >
+								<flowline >
+									<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='.Inc' swap='0' >
+										<flowline >
+											<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+												<exp exp='FilmBackoff = FilmBackoff + 1' />
+											</command>
+										</flowline>
+										<flowline >
+											<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+												<exp exp='FilmBackoff = FilmBackoff - 1' />
+											</command>
+										</flowline>
+									</command>
+								</flowline>
+							</case>
+							<case exp='10' >
+								<flowline >
+									<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='.Inc' swap='0' >
+										<flowline >
+											<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='FeedCycles = 255' swap='0' >
+												<flowline >
+													<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+														<exp exp='FeedCycles = 1' />
+													</command>
+												</flowline>
+												<flowline >
+													<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+														<exp exp='FeedCycles = FeedCycles + 1' />
+													</command>
+												</flowline>
+											</command>
+										</flowline>
+										<flowline >
+											<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='FeedCycles = 1' swap='0' >
+												<flowline >
+													<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+														<exp exp='FeedCycles = 255' />
+													</command>
+												</flowline>
+												<flowline >
+													<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+														<exp exp='FeedCycles = FeedCycles - 1' />
+													</command>
+												</flowline>
+											</command>
+										</flowline>
+									</command>
+								</flowline>
+							</case>
+						</command>
+						<command class_type='switch' title='Switch' textarea='36,25,36,25' cmdcolor='12615680' cmdcolor_sec='15376912' exp='Idx' >
+							<case >
+								<flowline />
+							</case>
+							<case exp='11' >
+								<flowline >
+									<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='.Inc' swap='0' >
+										<flowline >
+											<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='SensorThresh = 10' swap='0' >
+												<flowline >
+													<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+														<exp exp='SensorThresh = 1' />
+													</command>
+												</flowline>
+												<flowline >
+													<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+														<exp exp='SensorThresh = SensorThresh + 1' />
+													</command>
+												</flowline>
+											</command>
+										</flowline>
+										<flowline >
+											<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='SensorThresh = 1' swap='0' >
+												<flowline >
+													<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+														<exp exp='SensorThresh = 10' />
+													</command>
+												</flowline>
+												<flowline >
+													<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+														<exp exp='SensorThresh = SensorThresh - 1' />
+													</command>
+												</flowline>
+											</command>
+										</flowline>
+									</command>
+								</flowline>
+							</case>
+							<case exp='12' >
+								<flowline >
+									<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='.Inc' swap='0' >
+										<flowline >
+											<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+												<exp exp='SensorDelay = SensorDelay + 1' />
+											</command>
+										</flowline>
+										<flowline >
+											<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+												<exp exp='SensorDelay = SensorDelay - 1' />
+											</command>
+										</flowline>
+									</command>
+								</flowline>
+							</case>
+							<case exp='0' >
+								<flowline >
+									<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='.Inc' swap='0' >
+										<flowline >
+											<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+												<exp exp='Address = Address + 1' />
+											</command>
+										</flowline>
+										<flowline >
+											<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+												<exp exp='Address = Address - 1' />
+											</command>
+										</flowline>
+									</command>
+								</flowline>
+							</case>
+						</command>
+						<command class_type='call' title='Call Macro' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Display' />
+					</flowline>
+				</macro>
+				<macro >
+					<flowline name='Ev_Start' description='Broadcast to all components that simulation is starting' >
+						<return name='Return' type='u32' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='COMPort1' macro='OpenPort' />
+					</flowline>
+				</macro>
+				<macro >
+					<flowline name='WriteValues' description='' >
+						<return name='Return' type='v0' description='' isconst='0' isinit='0' usrinit='' setinit='' />
+						<local name='Delay' type='u8' description='' isconst='0' isinit='0' usrinit='0' setinit='' />
+						<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+							<exp exp='.Delay = 150' />
+						</command>
+						<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+							<exp exp='out[0] = &apos;:&apos;' />
+							<exp exp='out[1] = Address' />
+							<exp exp='out[2] = &apos;B&apos;' />
+							<exp exp='out[3] = 1' />
+							<exp exp='out[4] = MinFilmSp' />
+							<exp exp='out[5] = &apos;\n&apos;' />
+						</command>
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='COMPort1' macro='SendByteArray' >
+							<argument exp='out' />
+							<argument exp='6' />
+						</command>
+						<command class_type='delay' title='Delay' cmdcolor='12632064' cmdcolor_sec='16769676' exp='.Delay' type='1' />
+						<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+							<exp exp='out[0] = &apos;:&apos;' />
+							<exp exp='out[1] = Address' />
+							<exp exp='out[2] = &apos;B&apos;' />
+							<exp exp='out[3] = 2' />
+							<exp exp='out[4] = MaxFilmSp' />
+							<exp exp='out[5] = &apos;\n&apos;' />
+						</command>
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='COMPort1' macro='SendByteArray' >
+							<argument exp='out' />
+							<argument exp='6' />
+						</command>
+						<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+							<exp exp='out[0] = &apos;:&apos;' />
+							<exp exp='out[1] = Address' />
+							<exp exp='out[2] = &apos;B&apos;' />
+							<exp exp='out[3] = 3' />
+							<exp exp='out[4] = ServoSp' />
+							<exp exp='out[5] = &apos;\n&apos;' />
+						</command>
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='COMPort1' macro='SendByteArray' >
+							<argument exp='out' />
+							<argument exp='6' />
+						</command>
+						<command class_type='delay' title='Delay' cmdcolor='12632064' cmdcolor_sec='16769676' exp='.Delay' type='1' />
+						<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+							<exp exp='out[0] = &apos;:&apos;' />
+							<exp exp='out[1] = Address' />
+							<exp exp='out[2] = &apos;B&apos;' />
+							<exp exp='out[3] = 4' />
+							<exp exp='out[4] = ServoPull' />
+							<exp exp='out[5] = &apos;\n&apos;' />
+						</command>
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='COMPort1' macro='SendByteArray' >
+							<argument exp='out' />
+							<argument exp='6' />
+						</command>
+						<command class_type='delay' title='Delay' cmdcolor='12632064' cmdcolor_sec='16769676' exp='.Delay' type='1' />
+						<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+							<exp exp='out[0] = &apos;:&apos;' />
+							<exp exp='out[1] = Address' />
+							<exp exp='out[2] = &apos;B&apos;' />
+							<exp exp='out[3] = 5' />
+							<exp exp='out[4] = ServoPush' />
+							<exp exp='out[5] = &apos;\n&apos;' />
+						</command>
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='COMPort1' macro='SendByteArray' >
+							<argument exp='out' />
+							<argument exp='6' />
+						</command>
+						<command class_type='delay' title='Delay' cmdcolor='12632064' cmdcolor_sec='16769676' exp='.Delay' type='1' />
+						<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+							<exp exp='out[0] = &apos;:&apos;' />
+							<exp exp='out[1] = Address' />
+							<exp exp='out[2] = &apos;B&apos;' />
+							<exp exp='out[3] = 6' />
+							<exp exp='out[4] = IrSensor' />
+							<exp exp='out[5] = &apos;\n&apos;' />
+						</command>
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='COMPort1' macro='SendByteArray' >
+							<argument exp='out' />
+							<argument exp='6' />
+						</command>
+						<command class_type='delay' title='Delay' cmdcolor='12632064' cmdcolor_sec='16769676' exp='.Delay' type='1' />
+						<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+							<exp exp='out[0] = &apos;:&apos;' />
+							<exp exp='out[1] = Address' />
+							<exp exp='out[2] = &apos;B&apos;' />
+							<exp exp='out[3] = 7' />
+							<exp exp='out[4] = SensorThresh' />
+							<exp exp='out[5] = &apos;\n&apos;' />
+						</command>
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='COMPort1' macro='SendByteArray' >
+							<argument exp='out' />
+							<argument exp='6' />
+						</command>
+						<command class_type='delay' title='Delay' cmdcolor='12632064' cmdcolor_sec='16769676' exp='.Delay' type='1' />
+						<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+							<exp exp='out[0] = &apos;:&apos;' />
+							<exp exp='out[1] = Address' />
+							<exp exp='out[2] = &apos;B&apos;' />
+							<exp exp='out[3] = 8' />
+							<exp exp='out[4] = SensorDelay' />
+							<exp exp='out[5] = &apos;\n&apos;' />
+						</command>
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='COMPort1' macro='SendByteArray' >
+							<argument exp='out' />
+							<argument exp='6' />
+						</command>
+						<command class_type='delay' title='Delay' cmdcolor='12632064' cmdcolor_sec='16769676' exp='.Delay' type='1' />
+						<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+							<exp exp='out[0] = &apos;:&apos;' />
+							<exp exp='out[1] = Address' />
+							<exp exp='out[2] = &apos;B&apos;' />
+							<exp exp='out[3] = 9' />
+							<exp exp='out[4] = HolePitch' />
+							<exp exp='out[5] = &apos;\n&apos;' />
+						</command>
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='COMPort1' macro='SendByteArray' >
+							<argument exp='out' />
+							<argument exp='6' />
+						</command>
+						<command class_type='delay' title='Delay' cmdcolor='12632064' cmdcolor_sec='16769676' exp='.Delay' type='1' />
+						<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+							<exp exp='out[0] = &apos;:&apos;' />
+							<exp exp='out[1] = Address' />
+							<exp exp='out[2] = &apos;B&apos;' />
+							<exp exp='out[3] = 10' />
+							<exp exp='out[4] = FilmBackoff' />
+							<exp exp='out[5] = &apos;\n&apos;' />
+						</command>
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='COMPort1' macro='SendByteArray' >
+							<argument exp='out' />
+							<argument exp='6' />
+						</command>
+						<command class_type='delay' title='Delay' cmdcolor='12632064' cmdcolor_sec='16769676' exp='.Delay' type='1' />
+						<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+							<exp exp='out[0] = &apos;:&apos;' />
+							<exp exp='out[1] = Address' />
+							<exp exp='out[2] = &apos;B&apos;' />
+							<exp exp='out[3] = 11' />
+							<exp exp='out[4] = FeedCycles' />
+							<exp exp='out[5] = &apos;\n&apos;' />
+						</command>
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='COMPort1' macro='SendByteArray' >
+							<argument exp='out' />
+							<argument exp='6' />
+						</command>
+						<command class_type='delay' title='Delay' cmdcolor='12632064' cmdcolor_sec='16769676' exp='.Delay' type='1' />
+						<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+							<exp exp='out[0] = &apos;:&apos;' />
+							<exp exp='out[1] = Address' />
+							<exp exp='out[2] = &apos;B&apos;' />
+							<exp exp='out[3] = 12' />
+							<exp exp='out[4] = StepperRevs' />
+							<exp exp='out[5] = &apos;\n&apos;' />
+						</command>
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='COMPort1' macro='SendByteArray' >
+							<argument exp='out' />
+							<argument exp='6' />
+						</command>
+						<command class_type='delay' title='Delay' cmdcolor='12632064' cmdcolor_sec='16769676' exp='.Delay' type='1' />
+						<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+							<exp exp='out[0] = &apos;:&apos;' />
+							<exp exp='out[1] = Address' />
+							<exp exp='out[2] = &apos;B&apos;' />
+							<exp exp='out[3] = 13' />
+							<exp exp='out[4] = Beep' />
+							<exp exp='out[5] = &apos;\n&apos;' />
+						</command>
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='COMPort1' macro='SendByteArray' >
+							<argument exp='out' />
+							<argument exp='6' />
+						</command>
+						<command class_type='delay' title='Delay' cmdcolor='12632064' cmdcolor_sec='16769676' exp='.Delay' type='1' />
+						<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+							<exp exp='out[0] = &apos;:&apos;' />
+							<exp exp='out[1] = Address' />
+							<exp exp='out[2] = &apos;B&apos;' />
+							<exp exp='out[3] = 14' />
+							<exp exp='out[4] = IrFilter' />
+							<exp exp='out[5] = &apos;\n&apos;' />
+						</command>
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='COMPort1' macro='SendByteArray' >
+							<argument exp='out' />
+							<argument exp='6' />
+						</command>
+						<command class_type='delay' title='Delay' cmdcolor='12632064' cmdcolor_sec='16769676' exp='.Delay' type='1' />
+						<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+							<exp exp='out[0] = &apos;:&apos;' />
+							<exp exp='out[1] = Address' />
+							<exp exp='out[2] = &apos;B&apos;' />
+							<exp exp='out[3] = 0' />
+							<exp exp='out[4] = NewAddress' />
+							<exp exp='out[5] = &apos;\n&apos;' />
+						</command>
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='COMPort1' macro='SendByteArray' >
+							<argument exp='out' />
+							<argument exp='6' />
+						</command>
+						<command class_type='delay' title='Delay' cmdcolor='12632064' cmdcolor_sec='16769676' exp='.Delay' type='1' />
+					</flowline>
+				</macro>
+				<macro >
+					<flowline name='Main' description='' >
+						<return name='Return' type='v0' description='' isconst='0' isinit='0' usrinit='' setinit='' />
+						<command class_type='call' title='Call Macro' cmdcolor='1879295' cmdcolor_sec='5751039' macro='LED' />
+						<command class_type='call' title='Call Macro' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Display' />
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='SwSensrEnable' macro='SetState' >
+							<argument exp='IrSensor' />
+						</command>
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='SwFilterEnable' macro='SetState' >
+							<argument exp='IrFilter' />
+						</command>
+						<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='SwBeepEnable' macro='SetState' >
+							<argument exp='Beep' />
+						</command>
+						<command class_type='loop' title='Loop' cmdcolor='12615680' cmdcolor_sec='15376912' type='0' exp='1' >
+							<flowline >
+								<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='SwFeed :: GetState ()' swap='0' >
+									<flowline >
+										<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+											<exp exp='out[0] = &apos;:&apos;' />
+											<exp exp='out[1] = Address' />
+											<exp exp='out[2] = &apos;A&apos;' />
+											<exp exp='out[3] = &apos;\n&apos;' />
+										</command>
+										<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='COMPort1' macro='SendByteArray' >
+											<argument exp='out' />
+											<argument exp='4' />
+										</command>
+										<command class_type='loop' title='Loop' cmdcolor='12615680' cmdcolor_sec='15376912' type='0' exp='SwFeed :: GetState ()' >
+											<flowline />
+										</command>
+									</flowline>
+									<flowline />
+								</command>
+								<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='SwWrite :: GetState ()' swap='0' >
+									<flowline >
+										<command class_type='call' title='Call Macro' cmdcolor='1879295' cmdcolor_sec='5751039' macro='WriteValues' />
+										<command class_type='loop' title='Loop' cmdcolor='12615680' cmdcolor_sec='15376912' type='0' exp='SwWrite :: GetState ()' >
+											<flowline />
+										</command>
+									</flowline>
+									<flowline />
+								</command>
+								<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='SwResFilm :: GetState ()' swap='0' >
+									<flowline >
+										<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+											<exp exp='StepperRevs = 0' />
+										</command>
+										<command class_type='call' title='Call Macro' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Display' />
+										<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+											<exp exp='out[0] = &apos;:&apos;' />
+											<exp exp='out[1] = Address' />
+											<exp exp='out[2] = &apos;B&apos;' />
+											<exp exp='out[3] = 12' />
+											<exp exp='out[4] = StepperRevs' />
+											<exp exp='out[5] = &apos;\n&apos;' />
+										</command>
+										<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='COMPort1' macro='SendByteArray' >
+											<argument exp='out' />
+											<argument exp='6' />
+										</command>
+										<command class_type='loop' title='Loop' cmdcolor='12615680' cmdcolor_sec='15376912' type='0' exp='SwResFilm :: GetState ()' >
+											<flowline />
+										</command>
+									</flowline>
+									<flowline />
+								</command>
+								<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='SwFilm :: GetState ()' swap='0' >
+									<flowline >
+										<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+											<exp exp='out[0] = &apos;:&apos;' />
+											<exp exp='out[1] = Address' />
+											<exp exp='out[2] = &apos;C&apos;' />
+											<exp exp='out[3] = &apos;\n&apos;' />
+										</command>
+										<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='COMPort1' macro='SendByteArray' >
+											<argument exp='out' />
+											<argument exp='4' />
+										</command>
+										<command class_type='delay' title='Delay' cmdcolor='12632064' cmdcolor_sec='16769676' exp='PushDelay' type='1' />
+									</flowline>
+									<flowline />
+								</command>
+								<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='SwInc :: GetState ()' swap='0' >
+									<flowline >
+										<command class_type='call' title='Call Macro' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Adjust' >
+											<argument exp='1' />
+										</command>
+										<command class_type='delay' title='Delay' cmdcolor='12632064' cmdcolor_sec='16769676' exp='PushDelay' type='1' />
+									</flowline>
+									<flowline />
+								</command>
+								<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='SwDec :: GetState ()' swap='0' >
+									<flowline >
+										<command class_type='call' title='Call Macro' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Adjust' >
+											<argument exp='0' />
+										</command>
+										<command class_type='delay' title='Delay' cmdcolor='12632064' cmdcolor_sec='16769676' exp='PushDelay' type='1' />
+									</flowline>
+									<flowline />
+								</command>
+								<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='SwNext :: GetState ()' swap='0' >
+									<flowline >
+										<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='Idx &lt; 12' swap='0' >
+											<flowline >
+												<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+													<exp exp='Idx = Idx + 1' />
+												</command>
+											</flowline>
+											<flowline >
+												<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+													<exp exp='Idx = 0' />
+												</command>
+											</flowline>
+										</command>
+										<command class_type='call' title='Call Macro' cmdcolor='1879295' cmdcolor_sec='5751039' macro='LED' />
+										<command class_type='delay' title='Delay' cmdcolor='12632064' cmdcolor_sec='16769676' exp='PushDelay' type='1' />
+									</flowline>
+									<flowline />
+								</command>
+								<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='SwPrev :: GetState ()' swap='0' >
+									<flowline >
+										<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='Idx &gt; 0' swap='0' >
+											<flowline >
+												<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+													<exp exp='Idx = Idx - 1' />
+												</command>
+											</flowline>
+											<flowline >
+												<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+													<exp exp='Idx = 12' />
+												</command>
+											</flowline>
+										</command>
+										<command class_type='call' title='Call Macro' cmdcolor='1879295' cmdcolor_sec='5751039' macro='LED' />
+										<command class_type='delay' title='Delay' cmdcolor='12632064' cmdcolor_sec='16769676' exp='PushDelay' type='1' />
+									</flowline>
+									<flowline />
+								</command>
+								<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='SwLoad :: GetState ()' swap='0' >
+									<flowline >
+										<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='UI.YesNoMsgBox' >
+											<return exp='Ret' />
+											<argument exp='&quot;Are you sure you want to load the settings.\nThis will overwrite all of your current settings.&quot;' />
+										</command>
+										<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='Ret' swap='0' >
+											<flowline >
+												<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Component.Property.GetValue' >
+													<return exp='Address' />
+													<argument exp='this' />
+													<argument exp='&quot;RsAd&quot;' />
+												</command>
+												<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Component.Property.GetValue' >
+													<return exp='MinFilmSp' />
+													<argument exp='this' />
+													<argument exp='&quot;MinFilmSpeed&quot;' />
+												</command>
+												<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Component.Property.GetValue' >
+													<return exp='MaxFilmSp' />
+													<argument exp='this' />
+													<argument exp='&quot;MaxFilmSpeed&quot;' />
+												</command>
+												<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Component.Property.GetValue' >
+													<return exp='ServoSp' />
+													<argument exp='this' />
+													<argument exp='&quot;ServoSpeed&quot;' />
+												</command>
+												<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Component.Property.GetValue' >
+													<return exp='ServoPull' />
+													<argument exp='this' />
+													<argument exp='&quot;ServoPullPosition&quot;' />
+												</command>
+												<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Component.Property.GetValue' >
+													<return exp='ServoPush' />
+													<argument exp='this' />
+													<argument exp='&quot;ServoPushPosition&quot;' />
+												</command>
+												<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Component.Property.GetValue' >
+													<return exp='IrSensor' />
+													<argument exp='this' />
+													<argument exp='&quot;IRSensorEnable&quot;' />
+												</command>
+												<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Component.Property.GetValue' >
+													<return exp='SensorThresh' />
+													<argument exp='this' />
+													<argument exp='&quot;SensorThreshold&quot;' />
+												</command>
+												<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Component.Property.GetValue' >
+													<return exp='SensorDelay' />
+													<argument exp='this' />
+													<argument exp='&quot;SensorDelayP&quot;' />
+												</command>
+												<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Component.Property.GetValue' >
+													<return exp='HolePitch' />
+													<argument exp='this' />
+													<argument exp='&quot;HolePitchP&quot;' />
+												</command>
+												<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Component.Property.GetValue' >
+													<return exp='FilmBackoff' />
+													<argument exp='this' />
+													<argument exp='&quot;FilmBackoffP&quot;' />
+												</command>
+												<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Component.Property.GetValue' >
+													<return exp='FeedCycles' />
+													<argument exp='this' />
+													<argument exp='&quot;FeederCyclesP&quot;' />
+												</command>
+												<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Component.Property.GetValue' >
+													<return exp='StepperRevs' />
+													<argument exp='this' />
+													<argument exp='&quot;StepperRevolutions&quot;' />
+												</command>
+												<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Component.Property.GetValue' >
+													<return exp='Beep' />
+													<argument exp='this' />
+													<argument exp='&quot;BeepEnabled&quot;' />
+												</command>
+												<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Component.Property.GetValue' >
+													<return exp='IrFilter' />
+													<argument exp='this' />
+													<argument exp='&quot;IRSensorFilterEnable&quot;' />
+												</command>
+												<command class_type='call' title='Call Macro' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Display' />
+												<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='SwSensrEnable' macro='SetState' >
+													<argument exp='IrSensor' />
+												</command>
+												<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='SwFilterEnable' macro='SetState' >
+													<argument exp='IrFilter' />
+												</command>
+												<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='SwBeepEnable' macro='SetState' >
+													<argument exp='Beep' />
+												</command>
+											</flowline>
+											<flowline />
+										</command>
+										<command class_type='loop' title='Loop' cmdcolor='12615680' cmdcolor_sec='15376912' type='0' exp='SwLoad :: GetState ()' >
+											<flowline />
+										</command>
+									</flowline>
+									<flowline />
+								</command>
+								<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='SwSave :: GetState ()' swap='0' >
+									<flowline >
+										<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='UI.YesNoMsgBox' >
+											<return exp='Ret' />
+											<argument exp='&quot;Are you sure you want to save the settings.\nThis will overwrite all of your stored settings.&quot;' />
+										</command>
+										<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='Ret' swap='0' >
+											<flowline >
+												<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Component.Property.SetValue' >
+													<argument exp='this' />
+													<argument exp='&quot;RsAd&quot;' />
+													<argument exp='Address' />
+												</command>
+												<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Component.Property.SetValue' >
+													<argument exp='this' />
+													<argument exp='&quot;MinFilmSpeed&quot;' />
+													<argument exp='MinFilmSp' />
+												</command>
+												<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Component.Property.SetValue' >
+													<argument exp='this' />
+													<argument exp='&quot;MaxFilmSpeed&quot;' />
+													<argument exp='MaxFilmSp' />
+												</command>
+												<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Component.Property.SetValue' >
+													<argument exp='this' />
+													<argument exp='&quot;ServoSpeed&quot;' />
+													<argument exp='ServoSp' />
+												</command>
+												<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Component.Property.SetValue' >
+													<argument exp='this' />
+													<argument exp='&quot;ServoPullPosition&quot;' />
+													<argument exp='ServoPull' />
+												</command>
+												<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Component.Property.SetValue' >
+													<argument exp='this' />
+													<argument exp='&quot;ServoPushPosition&quot;' />
+													<argument exp='ServoPush' />
+												</command>
+												<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Component.Property.SetValue' >
+													<argument exp='this' />
+													<argument exp='&quot;IRSensorEnable&quot;' />
+													<argument exp='IrSensor' />
+												</command>
+												<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Component.Property.SetValue' >
+													<argument exp='this' />
+													<argument exp='&quot;SensorThreshold&quot;' />
+													<argument exp='SensorThresh' />
+												</command>
+												<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Component.Property.SetValue' >
+													<argument exp='this' />
+													<argument exp='&quot;SensorDelayP&quot;' />
+													<argument exp='SensorDelay' />
+												</command>
+												<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Component.Property.SetValue' >
+													<argument exp='this' />
+													<argument exp='&quot;HolePitchP&quot;' />
+													<argument exp='HolePitch' />
+												</command>
+												<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Component.Property.SetValue' >
+													<argument exp='this' />
+													<argument exp='&quot;FilmBackoffP&quot;' />
+													<argument exp='FilmBackoff' />
+												</command>
+												<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Component.Property.SetValue' >
+													<argument exp='this' />
+													<argument exp='&quot;FeederCyclesP&quot;' />
+													<argument exp='FeedCycles' />
+												</command>
+												<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Component.Property.SetValue' >
+													<argument exp='this' />
+													<argument exp='&quot;StepperRevolutions&quot;' />
+													<argument exp='StepperRevs' />
+												</command>
+												<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Component.Property.SetValue' >
+													<argument exp='this' />
+													<argument exp='&quot;BeepEnabled&quot;' />
+													<argument exp='Beep' />
+												</command>
+												<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Component.Property.SetValue' >
+													<argument exp='this' />
+													<argument exp='&quot;IRSensorFilterEnable&quot;' />
+													<argument exp='IrFilter' />
+												</command>
+											</flowline>
+											<flowline />
+										</command>
+										<command class_type='loop' title='Loop' cmdcolor='12615680' cmdcolor_sec='15376912' type='0' exp='SwSave :: GetState ()' >
+											<flowline />
+										</command>
+									</flowline>
+									<flowline />
+								</command>
+								<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='SwDefault :: GetState ()' swap='0' >
+									<flowline >
+										<command class_type='sim' title='Simulation' cmdcolor='1879295' cmdcolor_sec='5751039' macro='UI.YesNoMsgBox' >
+											<return exp='Ret' />
+											<argument exp='&quot;Are you sure you want to load the default settings.\nThis will overwrite all of your current settings.&quot;' />
+										</command>
+										<command class_type='decision' title='Decision' cmdcolor='12615680' cmdcolor_sec='15376912' exp='Ret' swap='0' >
+											<flowline >
+												<command class_type='calculation' title='Calculation' cmdcolor='16760919' cmdcolor_sec='16760832' >
+													<exp exp='Address = 1' />
+													<exp exp='Beep = 1' />
+													<exp exp='FeedCycles = 1' />
+													<exp exp='FilmBackoff = 2' />
+													<exp exp='HolePitch = 4' />
+													<exp exp='IrFilter = 1' />
+													<exp exp='IrSensor = 1' />
+													<exp exp='MaxFilmSp = 100' />
+													<exp exp='MinFilmSp = 255' />
+													<exp exp='NewAddress = 1' />
+													<exp exp='SensorDelay = 15' />
+													<exp exp='SensorThresh = 3' />
+													<exp exp='ServoPull = 200' />
+													<exp exp='ServoPush = 20' />
+													<exp exp='ServoSp = 4' />
+													<exp exp='StepperRevs = 0' />
+												</command>
+												<command class_type='call' title='Call Macro' cmdcolor='1879295' cmdcolor_sec='5751039' macro='Display' />
+												<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='SwSensrEnable' macro='SetState' >
+													<argument exp='IrSensor' />
+												</command>
+												<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='SwFilterEnable' macro='SetState' >
+													<argument exp='IrFilter' />
+												</command>
+												<command class_type='sim' title='Call Component Macro' cmdcolor='1879295' cmdcolor_sec='5751039' component='SwBeepEnable' macro='SetState' >
+													<argument exp='Beep' />
+												</command>
+											</flowline>
+											<flowline />
+										</command>
+										<command class_type='loop' title='Loop' cmdcolor='12615680' cmdcolor_sec='15376912' type='0' exp='SwDefault :: GetState ()' >
+											<flowline />
+										</command>
+									</flowline>
+									<flowline />
+								</command>
+								<command class_type='delay' title='Delay' cmdcolor='12632064' cmdcolor_sec='16769676' exp='1' type='1' />
+							</flowline>
+						</command>
+					</flowline>
+				</macro>
+			</macros>
+			<component class_type='ref' guid='cc31d777-b10d-4a0a-8b7a-58d842b5530d' vmin='1' vmaj='1' codename='SwFeed' x='69.7' y='-46.6' z='0' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='OnColour' data='65280' />
+					<value target='OffColour' data='128' />
+					<value target='auto_off' data='0' />
+					<value target='sim_switch_base1::StartupState' data='000' />
+					<value target='operation' data='000' />
+					<value target='Label' data='Perform Feed' />
+					<value target='LabelColour' data='16777215' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='cc31d777-b10d-4a0a-8b7a-58d842b5530d' vmin='1' vmaj='1' codename='SwWrite' x='38.2' y='-76.2' z='0' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='OnColour' data='65280' />
+					<value target='OffColour' data='128' />
+					<value target='auto_off' data='0' />
+					<value target='sim_switch_base1::StartupState' data='000' />
+					<value target='operation' data='000' />
+					<value target='Label' data='Write Values' />
+					<value target='LabelColour' data='16777215' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='cc31d777-b10d-4a0a-8b7a-58d842b5530d' vmin='1' vmaj='1' codename='SwFilm' x='34.2' y='-46.6' z='0' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='OnColour' data='65280' />
+					<value target='OffColour' data='128' />
+					<value target='auto_off' data='0' />
+					<value target='sim_switch_base1::StartupState' data='000' />
+					<value target='operation' data='000' />
+					<value target='Label' data='Film Move' />
+					<value target='LabelColour' data='16777215' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='cbb3c28e-2d73-4442-ac52-23a3b45d9870' vmin='0' vmaj='2' codename='COMPort1' x='221.2' y='-45.4' z='3.785' xsz='48' ysz='24' zsz='1.1475' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='COM_port' data='003' />
+					<value target='Refresh' data='0' />
+					<value target='baud_rate' data='9600' />
+					<value target='Tout_Val' data='256' />
+					<value target='ConsoleData' data='0' />
+					<value target='AutoClose' data='1' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='cc31d777-b10d-4a0a-8b7a-58d842b5530d' vmin='1' vmaj='1' codename='SwDefault' x='38.8' y='-175.5' z='0' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='OnColour' data='65280' />
+					<value target='OffColour' data='128' />
+					<value target='auto_off' data='0' />
+					<value target='sim_switch_base1::StartupState' data='000' />
+					<value target='operation' data='000' />
+					<value target='Label' data='Default Values' />
+					<value target='LabelColour' data='16777215' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='64f3c8ad-21a4-4e15-b9aa-c32a2edca893' vmin='0' vmaj='1' codename='g1' x='150.5' y='-47.5082' z='7.02' xsz='0.62963' ysz='0.609665' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='ShowTitle' data='1' />
+					<value target='Title' data='RS485 Address' />
+					<value target='TitleScale' data='2.000000' />
+					<value target='TitleColour' data='16777215' />
+					<value target='TitleOffset' data='15.000000' />
+					<value target='NumDigits' data='003' />
+					<value target='Range' data='000' />
+					<value target='FgCol' data='33023' />
+					<value target='BgCol' data='1973790' />
+					<value target='MinVal1' data='0.000000' />
+					<value target='MaxVal1' data='1000.000000' />
+					<value target='FgCol1' data='15335423' />
+					<value target='BgCol1' data='1973790' />
+					<value target='MinVal2' data='1000.000000' />
+					<value target='MaxVal2' data='1500.000000' />
+					<value target='FgCol2' data='10551295' />
+					<value target='BgCol2' data='7895160' />
+					<value target='MinVal3' data='1500.000000' />
+					<value target='MaxVal3' data='2000.000000' />
+					<value target='FgCol3' data='5767167' />
+					<value target='BgCol3' data='11842740' />
+					<value target='MinVal4' data='2000.000000' />
+					<value target='MaxVal4' data='3000.000000' />
+					<value target='FgCol4' data='17151' />
+					<value target='BgCol4' data='13816530' />
+					<value target='MinVal5' data='3000.000000' />
+					<value target='MaxVal5' data='10000.000000' />
+					<value target='FgCol5' data='255' />
+					<value target='BgCol5' data='65535' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='64f3c8ad-21a4-4e15-b9aa-c32a2edca893' vmin='0' vmaj='1' codename='g2' x='82.8' y='-89.6' z='7.02' xsz='0.62963' ysz='0.609665' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='ShowTitle' data='1' />
+					<value target='Title' data='New RS485 Address' />
+					<value target='TitleScale' data='2.000000' />
+					<value target='TitleColour' data='16777215' />
+					<value target='TitleOffset' data='15.000000' />
+					<value target='NumDigits' data='003' />
+					<value target='Range' data='000' />
+					<value target='FgCol' data='33023' />
+					<value target='BgCol' data='1973790' />
+					<value target='MinVal1' data='0.000000' />
+					<value target='MaxVal1' data='1000.000000' />
+					<value target='FgCol1' data='15335423' />
+					<value target='BgCol1' data='1973790' />
+					<value target='MinVal2' data='1000.000000' />
+					<value target='MaxVal2' data='1500.000000' />
+					<value target='FgCol2' data='10551295' />
+					<value target='BgCol2' data='7895160' />
+					<value target='MinVal3' data='1500.000000' />
+					<value target='MaxVal3' data='2000.000000' />
+					<value target='FgCol3' data='5767167' />
+					<value target='BgCol3' data='11842740' />
+					<value target='MinVal4' data='2000.000000' />
+					<value target='MaxVal4' data='3000.000000' />
+					<value target='FgCol4' data='17151' />
+					<value target='BgCol4' data='13816530' />
+					<value target='MinVal5' data='3000.000000' />
+					<value target='MaxVal5' data='10000.000000' />
+					<value target='FgCol5' data='255' />
+					<value target='BgCol5' data='65535' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='64f3c8ad-21a4-4e15-b9aa-c32a2edca893' vmin='0' vmaj='1' codename='g3' x='83.3' y='-109.6' z='7.02' xsz='0.62963' ysz='0.609665' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='ShowTitle' data='1' />
+					<value target='Title' data='Min Film Speed' />
+					<value target='TitleScale' data='2.000000' />
+					<value target='TitleColour' data='16777215' />
+					<value target='TitleOffset' data='15.000000' />
+					<value target='NumDigits' data='003' />
+					<value target='Range' data='000' />
+					<value target='FgCol' data='33023' />
+					<value target='BgCol' data='1973790' />
+					<value target='MinVal1' data='0.000000' />
+					<value target='MaxVal1' data='1000.000000' />
+					<value target='FgCol1' data='15335423' />
+					<value target='BgCol1' data='1973790' />
+					<value target='MinVal2' data='1000.000000' />
+					<value target='MaxVal2' data='1500.000000' />
+					<value target='FgCol2' data='10551295' />
+					<value target='BgCol2' data='7895160' />
+					<value target='MinVal3' data='1500.000000' />
+					<value target='MaxVal3' data='2000.000000' />
+					<value target='FgCol3' data='5767167' />
+					<value target='BgCol3' data='11842740' />
+					<value target='MinVal4' data='2000.000000' />
+					<value target='MaxVal4' data='3000.000000' />
+					<value target='FgCol4' data='17151' />
+					<value target='BgCol4' data='13816530' />
+					<value target='MinVal5' data='3000.000000' />
+					<value target='MaxVal5' data='10000.000000' />
+					<value target='FgCol5' data='255' />
+					<value target='BgCol5' data='65535' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='64f3c8ad-21a4-4e15-b9aa-c32a2edca893' vmin='0' vmaj='1' codename='g4' x='83.3' y='-129.6' z='7.02' xsz='0.62963' ysz='0.609665' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='ShowTitle' data='1' />
+					<value target='Title' data='Max Film Speed' />
+					<value target='TitleScale' data='2.000000' />
+					<value target='TitleColour' data='16777215' />
+					<value target='TitleOffset' data='15.000000' />
+					<value target='NumDigits' data='003' />
+					<value target='Range' data='000' />
+					<value target='FgCol' data='33023' />
+					<value target='BgCol' data='1973790' />
+					<value target='MinVal1' data='0.000000' />
+					<value target='MaxVal1' data='1000.000000' />
+					<value target='FgCol1' data='15335423' />
+					<value target='BgCol1' data='1973790' />
+					<value target='MinVal2' data='1000.000000' />
+					<value target='MaxVal2' data='1500.000000' />
+					<value target='FgCol2' data='10551295' />
+					<value target='BgCol2' data='7895160' />
+					<value target='MinVal3' data='1500.000000' />
+					<value target='MaxVal3' data='2000.000000' />
+					<value target='FgCol3' data='5767167' />
+					<value target='BgCol3' data='11842740' />
+					<value target='MinVal4' data='2000.000000' />
+					<value target='MaxVal4' data='3000.000000' />
+					<value target='FgCol4' data='17151' />
+					<value target='BgCol4' data='13816530' />
+					<value target='MinVal5' data='3000.000000' />
+					<value target='MaxVal5' data='10000.000000' />
+					<value target='FgCol5' data='255' />
+					<value target='BgCol5' data='65535' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='64f3c8ad-21a4-4e15-b9aa-c32a2edca893' vmin='0' vmaj='1' codename='g5' x='83.3' y='-149.6' z='7.02' xsz='0.62963' ysz='0.609665' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='ShowTitle' data='1' />
+					<value target='Title' data='Servo Speed' />
+					<value target='TitleScale' data='2.000000' />
+					<value target='TitleColour' data='16777215' />
+					<value target='TitleOffset' data='15.000000' />
+					<value target='NumDigits' data='003' />
+					<value target='Range' data='000' />
+					<value target='FgCol' data='33023' />
+					<value target='BgCol' data='1973790' />
+					<value target='MinVal1' data='0.000000' />
+					<value target='MaxVal1' data='1000.000000' />
+					<value target='FgCol1' data='15335423' />
+					<value target='BgCol1' data='1973790' />
+					<value target='MinVal2' data='1000.000000' />
+					<value target='MaxVal2' data='1500.000000' />
+					<value target='FgCol2' data='10551295' />
+					<value target='BgCol2' data='7895160' />
+					<value target='MinVal3' data='1500.000000' />
+					<value target='MaxVal3' data='2000.000000' />
+					<value target='FgCol3' data='5767167' />
+					<value target='BgCol3' data='11842740' />
+					<value target='MinVal4' data='2000.000000' />
+					<value target='MaxVal4' data='3000.000000' />
+					<value target='FgCol4' data='17151' />
+					<value target='BgCol4' data='13816530' />
+					<value target='MinVal5' data='3000.000000' />
+					<value target='MaxVal5' data='10000.000000' />
+					<value target='FgCol5' data='255' />
+					<value target='BgCol5' data='65535' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='64f3c8ad-21a4-4e15-b9aa-c32a2edca893' vmin='0' vmaj='1' codename='g7' x='133.3' y='-89.6' z='15.02' xsz='0.62963' ysz='0.609665' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='ShowTitle' data='1' />
+					<value target='Title' data='Pull Position' />
+					<value target='TitleScale' data='2.000000' />
+					<value target='TitleColour' data='16777215' />
+					<value target='TitleOffset' data='15.000000' />
+					<value target='NumDigits' data='003' />
+					<value target='Range' data='000' />
+					<value target='FgCol' data='33023' />
+					<value target='BgCol' data='1973790' />
+					<value target='MinVal1' data='0.000000' />
+					<value target='MaxVal1' data='1000.000000' />
+					<value target='FgCol1' data='15335423' />
+					<value target='BgCol1' data='1973790' />
+					<value target='MinVal2' data='1000.000000' />
+					<value target='MaxVal2' data='1500.000000' />
+					<value target='FgCol2' data='10551295' />
+					<value target='BgCol2' data='7895160' />
+					<value target='MinVal3' data='1500.000000' />
+					<value target='MaxVal3' data='2000.000000' />
+					<value target='FgCol3' data='5767167' />
+					<value target='BgCol3' data='11842740' />
+					<value target='MinVal4' data='2000.000000' />
+					<value target='MaxVal4' data='3000.000000' />
+					<value target='FgCol4' data='17151' />
+					<value target='BgCol4' data='13816530' />
+					<value target='MinVal5' data='3000.000000' />
+					<value target='MaxVal5' data='10000.000000' />
+					<value target='FgCol5' data='255' />
+					<value target='BgCol5' data='65535' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='64f3c8ad-21a4-4e15-b9aa-c32a2edca893' vmin='0' vmaj='1' codename='g8' x='133.3' y='-109.6' z='19.27' xsz='0.62963' ysz='0.609665' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='ShowTitle' data='1' />
+					<value target='Title' data='Push Position' />
+					<value target='TitleScale' data='2.000000' />
+					<value target='TitleColour' data='16777215' />
+					<value target='TitleOffset' data='15.000000' />
+					<value target='NumDigits' data='003' />
+					<value target='Range' data='000' />
+					<value target='FgCol' data='33023' />
+					<value target='BgCol' data='1973790' />
+					<value target='MinVal1' data='0.000000' />
+					<value target='MaxVal1' data='1000.000000' />
+					<value target='FgCol1' data='15335423' />
+					<value target='BgCol1' data='1973790' />
+					<value target='MinVal2' data='1000.000000' />
+					<value target='MaxVal2' data='1500.000000' />
+					<value target='FgCol2' data='10551295' />
+					<value target='BgCol2' data='7895160' />
+					<value target='MinVal3' data='1500.000000' />
+					<value target='MaxVal3' data='2000.000000' />
+					<value target='FgCol3' data='5767167' />
+					<value target='BgCol3' data='11842740' />
+					<value target='MinVal4' data='2000.000000' />
+					<value target='MaxVal4' data='3000.000000' />
+					<value target='FgCol4' data='17151' />
+					<value target='BgCol4' data='13816530' />
+					<value target='MinVal5' data='3000.000000' />
+					<value target='MaxVal5' data='10000.000000' />
+					<value target='FgCol5' data='255' />
+					<value target='BgCol5' data='65535' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='64f3c8ad-21a4-4e15-b9aa-c32a2edca893' vmin='0' vmaj='1' codename='g12' x='183.3' y='-150.8' z='27.27' xsz='0.62963' ysz='0.609665' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='ShowTitle' data='1' />
+					<value target='Title' data='Sensor Threshold' />
+					<value target='TitleScale' data='2.000000' />
+					<value target='TitleColour' data='16777215' />
+					<value target='TitleOffset' data='15.000000' />
+					<value target='NumDigits' data='003' />
+					<value target='Range' data='000' />
+					<value target='FgCol' data='33023' />
+					<value target='BgCol' data='1973790' />
+					<value target='MinVal1' data='0.000000' />
+					<value target='MaxVal1' data='1000.000000' />
+					<value target='FgCol1' data='15335423' />
+					<value target='BgCol1' data='1973790' />
+					<value target='MinVal2' data='1000.000000' />
+					<value target='MaxVal2' data='1500.000000' />
+					<value target='FgCol2' data='10551295' />
+					<value target='BgCol2' data='7895160' />
+					<value target='MinVal3' data='1500.000000' />
+					<value target='MaxVal3' data='2000.000000' />
+					<value target='FgCol3' data='5767167' />
+					<value target='BgCol3' data='11842740' />
+					<value target='MinVal4' data='2000.000000' />
+					<value target='MaxVal4' data='3000.000000' />
+					<value target='FgCol4' data='17151' />
+					<value target='BgCol4' data='13816530' />
+					<value target='MinVal5' data='3000.000000' />
+					<value target='MaxVal5' data='10000.000000' />
+					<value target='FgCol5' data='255' />
+					<value target='BgCol5' data='65535' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='cc31d777-b10d-4a0a-8b7a-58d842b5530d' vmin='1' vmaj='1' codename='SwSensrEnable' x='193.3' y='-97.4' z='0' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='OnColour' data='65280' />
+					<value target='OffColour' data='128' />
+					<value target='auto_off' data='0' />
+					<value target='sim_switch_base1::StartupState' data='000' />
+					<value target='operation' data='001' />
+					<value target='Label' data='IR Sensor Enable' />
+					<value target='LabelColour' data='16777215' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='64f3c8ad-21a4-4e15-b9aa-c32a2edca893' vmin='0' vmaj='1' codename='g13' x='183.3' y='-170.8' z='43.2994' xsz='0.62963' ysz='0.609665' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='ShowTitle' data='1' />
+					<value target='Title' data='Sensor Delay' />
+					<value target='TitleScale' data='2.000000' />
+					<value target='TitleColour' data='16777215' />
+					<value target='TitleOffset' data='15.000000' />
+					<value target='NumDigits' data='003' />
+					<value target='Range' data='000' />
+					<value target='FgCol' data='33023' />
+					<value target='BgCol' data='1973790' />
+					<value target='MinVal1' data='0.000000' />
+					<value target='MaxVal1' data='1000.000000' />
+					<value target='FgCol1' data='15335423' />
+					<value target='BgCol1' data='1973790' />
+					<value target='MinVal2' data='1000.000000' />
+					<value target='MaxVal2' data='1500.000000' />
+					<value target='FgCol2' data='10551295' />
+					<value target='BgCol2' data='7895160' />
+					<value target='MinVal3' data='1500.000000' />
+					<value target='MaxVal3' data='2000.000000' />
+					<value target='FgCol3' data='5767167' />
+					<value target='BgCol3' data='11842740' />
+					<value target='MinVal4' data='2000.000000' />
+					<value target='MaxVal4' data='3000.000000' />
+					<value target='FgCol4' data='17151' />
+					<value target='BgCol4' data='13816530' />
+					<value target='MinVal5' data='3000.000000' />
+					<value target='MaxVal5' data='10000.000000' />
+					<value target='FgCol5' data='255' />
+					<value target='BgCol5' data='65535' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='64f3c8ad-21a4-4e15-b9aa-c32a2edca893' vmin='0' vmaj='1' codename='g9' x='133.3' y='-129.6' z='19.27' xsz='0.62963' ysz='0.609665' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='ShowTitle' data='1' />
+					<value target='Title' data='Hole Pitch' />
+					<value target='TitleScale' data='2.000000' />
+					<value target='TitleColour' data='16777215' />
+					<value target='TitleOffset' data='15.000000' />
+					<value target='NumDigits' data='003' />
+					<value target='Range' data='000' />
+					<value target='FgCol' data='33023' />
+					<value target='BgCol' data='1973790' />
+					<value target='MinVal1' data='0.000000' />
+					<value target='MaxVal1' data='1000.000000' />
+					<value target='FgCol1' data='15335423' />
+					<value target='BgCol1' data='1973790' />
+					<value target='MinVal2' data='1000.000000' />
+					<value target='MaxVal2' data='1500.000000' />
+					<value target='FgCol2' data='10551295' />
+					<value target='BgCol2' data='7895160' />
+					<value target='MinVal3' data='1500.000000' />
+					<value target='MaxVal3' data='2000.000000' />
+					<value target='FgCol3' data='5767167' />
+					<value target='BgCol3' data='11842740' />
+					<value target='MinVal4' data='2000.000000' />
+					<value target='MaxVal4' data='3000.000000' />
+					<value target='FgCol4' data='17151' />
+					<value target='BgCol4' data='13816530' />
+					<value target='MinVal5' data='3000.000000' />
+					<value target='MaxVal5' data='10000.000000' />
+					<value target='FgCol5' data='255' />
+					<value target='BgCol5' data='65535' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='64f3c8ad-21a4-4e15-b9aa-c32a2edca893' vmin='0' vmaj='1' codename='g10' x='134.475' y='-150.7' z='19.27' xsz='0.62963' ysz='0.609665' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='ShowTitle' data='1' />
+					<value target='Title' data='Film Backoff' />
+					<value target='TitleScale' data='2.000000' />
+					<value target='TitleColour' data='16777215' />
+					<value target='TitleOffset' data='15.000000' />
+					<value target='NumDigits' data='003' />
+					<value target='Range' data='000' />
+					<value target='FgCol' data='33023' />
+					<value target='BgCol' data='1973790' />
+					<value target='MinVal1' data='0.000000' />
+					<value target='MaxVal1' data='1000.000000' />
+					<value target='FgCol1' data='15335423' />
+					<value target='BgCol1' data='1973790' />
+					<value target='MinVal2' data='1000.000000' />
+					<value target='MaxVal2' data='1500.000000' />
+					<value target='FgCol2' data='10551295' />
+					<value target='BgCol2' data='7895160' />
+					<value target='MinVal3' data='1500.000000' />
+					<value target='MaxVal3' data='2000.000000' />
+					<value target='FgCol3' data='5767167' />
+					<value target='BgCol3' data='11842740' />
+					<value target='MinVal4' data='2000.000000' />
+					<value target='MaxVal4' data='3000.000000' />
+					<value target='FgCol4' data='17151' />
+					<value target='BgCol4' data='13816530' />
+					<value target='MinVal5' data='3000.000000' />
+					<value target='MaxVal5' data='10000.000000' />
+					<value target='FgCol5' data='255' />
+					<value target='BgCol5' data='65535' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='64f3c8ad-21a4-4e15-b9aa-c32a2edca893' vmin='0' vmaj='1' codename='g11' x='134.85' y='-170.7' z='35.2994' xsz='0.62963' ysz='0.609665' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='ShowTitle' data='1' />
+					<value target='Title' data='Feeder Cycles' />
+					<value target='TitleScale' data='2.000000' />
+					<value target='TitleColour' data='16777215' />
+					<value target='TitleOffset' data='15.000000' />
+					<value target='NumDigits' data='003' />
+					<value target='Range' data='000' />
+					<value target='FgCol' data='33023' />
+					<value target='BgCol' data='1973790' />
+					<value target='MinVal1' data='0.000000' />
+					<value target='MaxVal1' data='1000.000000' />
+					<value target='FgCol1' data='15335423' />
+					<value target='BgCol1' data='1973790' />
+					<value target='MinVal2' data='1000.000000' />
+					<value target='MaxVal2' data='1500.000000' />
+					<value target='FgCol2' data='10551295' />
+					<value target='BgCol2' data='7895160' />
+					<value target='MinVal3' data='1500.000000' />
+					<value target='MaxVal3' data='2000.000000' />
+					<value target='FgCol3' data='5767167' />
+					<value target='BgCol3' data='11842740' />
+					<value target='MinVal4' data='2000.000000' />
+					<value target='MaxVal4' data='3000.000000' />
+					<value target='FgCol4' data='17151' />
+					<value target='BgCol4' data='13816530' />
+					<value target='MinVal5' data='3000.000000' />
+					<value target='MaxVal5' data='10000.000000' />
+					<value target='FgCol5' data='255' />
+					<value target='BgCol5' data='65535' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='64f3c8ad-21a4-4e15-b9aa-c32a2edca893' vmin='0' vmaj='1' codename='g6' x='84.2246' y='-170.9' z='27.2994' xsz='0.62963' ysz='0.609665' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='ShowTitle' data='1' />
+					<value target='Title' data='Film Rev Count' />
+					<value target='TitleScale' data='2.000000' />
+					<value target='TitleColour' data='16777215' />
+					<value target='TitleOffset' data='15.000000' />
+					<value target='NumDigits' data='003' />
+					<value target='Range' data='000' />
+					<value target='FgCol' data='33023' />
+					<value target='BgCol' data='1973790' />
+					<value target='MinVal1' data='0.000000' />
+					<value target='MaxVal1' data='1000.000000' />
+					<value target='FgCol1' data='15335423' />
+					<value target='BgCol1' data='1973790' />
+					<value target='MinVal2' data='1000.000000' />
+					<value target='MaxVal2' data='1500.000000' />
+					<value target='FgCol2' data='10551295' />
+					<value target='BgCol2' data='7895160' />
+					<value target='MinVal3' data='1500.000000' />
+					<value target='MaxVal3' data='2000.000000' />
+					<value target='FgCol3' data='5767167' />
+					<value target='BgCol3' data='11842740' />
+					<value target='MinVal4' data='2000.000000' />
+					<value target='MaxVal4' data='3000.000000' />
+					<value target='FgCol4' data='17151' />
+					<value target='BgCol4' data='13816530' />
+					<value target='MinVal5' data='3000.000000' />
+					<value target='MaxVal5' data='10000.000000' />
+					<value target='FgCol5' data='255' />
+					<value target='BgCol5' data='65535' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='cc31d777-b10d-4a0a-8b7a-58d842b5530d' vmin='1' vmaj='1' codename='SwBeepEnable' x='229.8' y='-110.3' z='0' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='OnColour' data='65280' />
+					<value target='OffColour' data='128' />
+					<value target='auto_off' data='0' />
+					<value target='sim_switch_base1::StartupState' data='000' />
+					<value target='operation' data='001' />
+					<value target='Label' data='Beep Enable' />
+					<value target='LabelColour' data='16777215' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='cc31d777-b10d-4a0a-8b7a-58d842b5530d' vmin='1' vmaj='1' codename='SwFilterEnable' x='193.8' y='-121.3' z='0' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='OnColour' data='65280' />
+					<value target='OffColour' data='128' />
+					<value target='auto_off' data='0' />
+					<value target='sim_switch_base1::StartupState' data='000' />
+					<value target='operation' data='001' />
+					<value target='Label' data='IR Filter Enable' />
+					<value target='LabelColour' data='16777215' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='cc31d777-b10d-4a0a-8b7a-58d842b5530d' vmin='1' vmaj='1' codename='SwInc' x='44.8' y='-123.3' z='0' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='OnColour' data='65280' />
+					<value target='OffColour' data='128' />
+					<value target='auto_off' data='0' />
+					<value target='sim_switch_base1::StartupState' data='000' />
+					<value target='operation' data='000' />
+					<value target='Label' data='+' />
+					<value target='LabelColour' data='16777215' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='cc31d777-b10d-4a0a-8b7a-58d842b5530d' vmin='1' vmaj='1' codename='SwDec' x='31.8' y='-123.3' z='0' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='OnColour' data='65280' />
+					<value target='OffColour' data='128' />
+					<value target='auto_off' data='0' />
+					<value target='sim_switch_base1::StartupState' data='000' />
+					<value target='operation' data='000' />
+					<value target='Label' data='-' />
+					<value target='LabelColour' data='16777215' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='cc31d777-b10d-4a0a-8b7a-58d842b5530d' vmin='1' vmaj='1' codename='SwNext' x='44.8' y='-99.7' z='0' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='OnColour' data='65280' />
+					<value target='OffColour' data='128' />
+					<value target='auto_off' data='0' />
+					<value target='sim_switch_base1::StartupState' data='000' />
+					<value target='operation' data='000' />
+					<value target='Label' data='&gt;' />
+					<value target='LabelColour' data='16777215' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='cc31d777-b10d-4a0a-8b7a-58d842b5530d' vmin='1' vmaj='1' codename='SwPrev' x='31.8' y='-99.7' z='0' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='OnColour' data='65280' />
+					<value target='OffColour' data='128' />
+					<value target='auto_off' data='0' />
+					<value target='sim_switch_base1::StartupState' data='000' />
+					<value target='operation' data='000' />
+					<value target='Label' data='&lt;' />
+					<value target='LabelColour' data='16777215' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='ca4f7f42-4697-4d24-95b8-9cc3a9ebdd83' vmin='1' vmaj='1' codename='l2' x='83.3' y='-89.3' z='13.57' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='sim_led_base1::on_color' data='65280' />
+					<value target='sim_led_base1::off_color' data='21760' />
+					<value target='sim_led_base1::auto_off' data='1' />
+					<value target='sim_led_base1::StartupState' data='000' />
+					<value target='length' data='4.000000' />
+					<value target='Label' data='' />
+					<value target='LabelColour' data='16777215' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='ca4f7f42-4697-4d24-95b8-9cc3a9ebdd83' vmin='1' vmaj='1' codename='l3' x='83.3' y='-109.6' z='13.57' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='sim_led_base1::on_color' data='65280' />
+					<value target='sim_led_base1::off_color' data='21760' />
+					<value target='sim_led_base1::auto_off' data='1' />
+					<value target='sim_led_base1::StartupState' data='000' />
+					<value target='length' data='4.000000' />
+					<value target='Label' data='' />
+					<value target='LabelColour' data='16777215' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='ca4f7f42-4697-4d24-95b8-9cc3a9ebdd83' vmin='1' vmaj='1' codename='l4' x='83.3' y='-129.9' z='13.57' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='sim_led_base1::on_color' data='65280' />
+					<value target='sim_led_base1::off_color' data='21760' />
+					<value target='sim_led_base1::auto_off' data='1' />
+					<value target='sim_led_base1::StartupState' data='000' />
+					<value target='length' data='4.000000' />
+					<value target='Label' data='' />
+					<value target='LabelColour' data='16777215' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='ca4f7f42-4697-4d24-95b8-9cc3a9ebdd83' vmin='1' vmaj='1' codename='l5' x='83.3' y='-150.2' z='13.57' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='sim_led_base1::on_color' data='65280' />
+					<value target='sim_led_base1::off_color' data='21760' />
+					<value target='sim_led_base1::auto_off' data='1' />
+					<value target='sim_led_base1::StartupState' data='000' />
+					<value target='length' data='4.000000' />
+					<value target='Label' data='' />
+					<value target='LabelColour' data='16777215' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='ca4f7f42-4697-4d24-95b8-9cc3a9ebdd83' vmin='1' vmaj='1' codename='l6' x='83.3' y='-170' z='35.2759' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='sim_led_base1::on_color' data='65280' />
+					<value target='sim_led_base1::off_color' data='21760' />
+					<value target='sim_led_base1::auto_off' data='1' />
+					<value target='sim_led_base1::StartupState' data='000' />
+					<value target='length' data='4.000000' />
+					<value target='Label' data='' />
+					<value target='LabelColour' data='16777215' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='ca4f7f42-4697-4d24-95b8-9cc3a9ebdd83' vmin='1' vmaj='1' codename='l11' x='133.3' y='-170' z='43.2759' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='sim_led_base1::on_color' data='65280' />
+					<value target='sim_led_base1::off_color' data='21760' />
+					<value target='sim_led_base1::auto_off' data='1' />
+					<value target='sim_led_base1::StartupState' data='000' />
+					<value target='length' data='4.000000' />
+					<value target='Label' data='' />
+					<value target='LabelColour' data='16777215' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='ca4f7f42-4697-4d24-95b8-9cc3a9ebdd83' vmin='1' vmaj='1' codename='l10' x='133.3' y='-151.6' z='38.9965' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='sim_led_base1::on_color' data='65280' />
+					<value target='sim_led_base1::off_color' data='21760' />
+					<value target='sim_led_base1::auto_off' data='1' />
+					<value target='sim_led_base1::StartupState' data='000' />
+					<value target='length' data='4.000000' />
+					<value target='Label' data='' />
+					<value target='LabelColour' data='16777215' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='ca4f7f42-4697-4d24-95b8-9cc3a9ebdd83' vmin='1' vmaj='1' codename='l9' x='133.3' y='-129.7' z='38.9965' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='sim_led_base1::on_color' data='65280' />
+					<value target='sim_led_base1::off_color' data='21760' />
+					<value target='sim_led_base1::auto_off' data='1' />
+					<value target='sim_led_base1::StartupState' data='000' />
+					<value target='length' data='4.000000' />
+					<value target='Label' data='' />
+					<value target='LabelColour' data='16777215' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='ca4f7f42-4697-4d24-95b8-9cc3a9ebdd83' vmin='1' vmaj='1' codename='l8' x='133.3' y='-111.1' z='38.9965' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='sim_led_base1::on_color' data='65280' />
+					<value target='sim_led_base1::off_color' data='21760' />
+					<value target='sim_led_base1::auto_off' data='1' />
+					<value target='sim_led_base1::StartupState' data='000' />
+					<value target='length' data='4.000000' />
+					<value target='Label' data='' />
+					<value target='LabelColour' data='16777215' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='ca4f7f42-4697-4d24-95b8-9cc3a9ebdd83' vmin='1' vmaj='1' codename='l7' x='133.3' y='-90.4' z='38.9965' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='sim_led_base1::on_color' data='65280' />
+					<value target='sim_led_base1::off_color' data='21760' />
+					<value target='sim_led_base1::auto_off' data='1' />
+					<value target='sim_led_base1::StartupState' data='000' />
+					<value target='length' data='4.000000' />
+					<value target='Label' data='' />
+					<value target='LabelColour' data='16777215' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='ca4f7f42-4697-4d24-95b8-9cc3a9ebdd83' vmin='1' vmaj='1' codename='l12' x='183.3' y='-150.9' z='38.9965' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='sim_led_base1::on_color' data='65280' />
+					<value target='sim_led_base1::off_color' data='21760' />
+					<value target='sim_led_base1::auto_off' data='1' />
+					<value target='sim_led_base1::StartupState' data='000' />
+					<value target='length' data='4.000000' />
+					<value target='Label' data='' />
+					<value target='LabelColour' data='16777215' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='ca4f7f42-4697-4d24-95b8-9cc3a9ebdd83' vmin='1' vmaj='1' codename='l13' x='183.3' y='-171.2' z='51.2759' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='sim_led_base1::on_color' data='65280' />
+					<value target='sim_led_base1::off_color' data='21760' />
+					<value target='sim_led_base1::auto_off' data='1' />
+					<value target='sim_led_base1::StartupState' data='000' />
+					<value target='length' data='4.000000' />
+					<value target='Label' data='' />
+					<value target='LabelColour' data='16777215' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='ca4f7f42-4697-4d24-95b8-9cc3a9ebdd83' vmin='1' vmaj='1' codename='l1' x='150.5' y='-47.3' z='38.9965' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='sim_led_base1::on_color' data='65280' />
+					<value target='sim_led_base1::off_color' data='21760' />
+					<value target='sim_led_base1::auto_off' data='1' />
+					<value target='sim_led_base1::StartupState' data='000' />
+					<value target='length' data='4.000000' />
+					<value target='Label' data='' />
+					<value target='LabelColour' data='16777215' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='9ec41243-060f-42c3-93b0-de81ada331fa' vmin='0' vmaj='1' codename='shape_rectangle1' x='133.1' y='-125' z='-7.3' xsz='7.2' ysz='4' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='Color' data='20096' />
+					<value target='Outline' data='0' />
+					<value target='Thickness' data='0.500000' />
+					<value target='Image' data='' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='cc31d777-b10d-4a0a-8b7a-58d842b5530d' vmin='1' vmaj='1' codename='SwLoad' x='32.5' y='-150.1' z='0' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='OnColour' data='65280' />
+					<value target='OffColour' data='128' />
+					<value target='auto_off' data='0' />
+					<value target='sim_switch_base1::StartupState' data='000' />
+					<value target='operation' data='000' />
+					<value target='Label' data='Load' />
+					<value target='LabelColour' data='16777215' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='cc31d777-b10d-4a0a-8b7a-58d842b5530d' vmin='1' vmaj='1' codename='SwSave' x='44.8' y='-150.1' z='0' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='OnColour' data='65280' />
+					<value target='OffColour' data='128' />
+					<value target='auto_off' data='0' />
+					<value target='sim_switch_base1::StartupState' data='000' />
+					<value target='operation' data='000' />
+					<value target='Label' data='Save' />
+					<value target='LabelColour' data='16777215' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+			<component class_type='ref' guid='cc31d777-b10d-4a0a-8b7a-58d842b5530d' vmin='1' vmaj='1' codename='SwResFilm' x='103.6' y='-46.6' z='0' xsz='1' ysz='1' zsz='1' xang='0' yang='0' zang='0' xquat='0' yquat='0' zquat='0' wquat='1' visible='1' scadavisible='1' interactive='1' solid='1' layer='1' poslock='0' >
+				<resources />
+				<properties />
+				<values >
+					<value target='OnColour' data='65280' />
+					<value target='OffColour' data='128' />
+					<value target='auto_off' data='0' />
+					<value target='sim_switch_base1::StartupState' data='000' />
+					<value target='operation' data='000' />
+					<value target='Label' data='Reset Film Revs' />
+					<value target='LabelColour' data='16777215' />
+				</values>
+				<events />
+				<apis />
+				<variables />
+				<macros />
+			</component>
+		</component>
+	</components>
+	<scadaresourcelookup />
+	<keymap />
+	<panel2d shadows='0' lighting='2' brightness='0' >
+		<background rgb='7292207' img='' style='0' />
+		<camera xe='134.72' ye='-110.615' ze='340.022' xt='134.72' yt='-110.615' zt='0' xquat='0' yquat='0' zquat='0' wquat='1' />
+	</panel2d>
+	<panel3d shadows='0' lighting='2' brightness='0' perspective='1' >
+		<background rgb='8409120' img='' style='0' />
+		<table rgb='7360576' img='' style='0' size='0' />
+		<camera xe='0' ye='0' ze='300' xt='0' yt='0' zt='0' xquat='0' yquat='0' zquat='0' wquat='1' />
+		<camerakey0 xe='0' ye='0' ze='300' xt='0' yt='0' zt='0' xquat='0' yquat='0' zquat='0' wquat='1' />
+		<camerakey1 xe='-3.67394e-14' ye='0' ze='-300' xt='0' yt='0' zt='0' xquat='0' yquat='1' zquat='0' wquat='6.12323e-17' />
+		<camerakey2 xe='0' ye='-300' ze='6.66134e-14' xt='0' yt='0' zt='0' xquat='-0.707107' yquat='0' zquat='0' wquat='0.707107' />
+		<camerakey3 xe='-3.67394e-14' ye='300' ze='6.66134e-14' xt='0' yt='0' zt='0' xquat='-4.32978e-17' yquat='0.707107' zquat='0.707107' wquat='4.32978e-17' />
+		<camerakey4 xe='-300' ye='-6.66134e-14' ze='6.66134e-14' xt='0' yt='0' zt='0' xquat='-0.5' yquat='0.5' zquat='0.5' wquat='0.5' />
+		<camerakey5 xe='300' ye='-6.66134e-14' ze='6.66134e-14' xt='0' yt='0' zt='0' xquat='-0.5' yquat='-0.5' zquat='-0.5' wquat='0.5' />
+		<camerakey6 xe='-173.205' ye='-173.205' ze='173.205' xt='0' yt='0' zt='0' xquat='-0.424708' yquat='0.17592' zquat='0.339851' wquat='0.820473' />
+	</panel3d>
+	<layout >
+		<view type='0' name='Main' mode='0' placement='LAAAAAAAAAABAAAA---------------------wUAAAAeAAAA6QUAAM8GAAA' zoom='75' scrollx='0' scrolly='0' flags='0' />
+		<view type='0' name='WriteValues' mode='0' placement='LAAAAAAAAAABAAAA---------------------wUAAAAeAAAA6QUAAM8GAAA' zoom='70' scrollx='0' scrolly='0' flags='0' />
+		<view type='0' name='Adjust' mode='0' placement='LAAAAAAAAAABAAAA---------------------wUAAAAeAAAA6QUAAM8GAAA' zoom='75' scrollx='0' scrolly='0' flags='0' />
+		<view type='0' name='LED' mode='0' placement='LAAAAAAAAAABAAAA---------------------wUAAAAeAAAA6QUAAM8GAAA' zoom='75' scrollx='0' scrolly='0' flags='0' />
+		<view type='0' name='Ev_Stop' mode='0' placement='LAAAAAAAAAABAAAA---------------------wUAAAAeAAAA6QUAAM8GAAA' zoom='75' scrollx='0' scrolly='0' flags='0' />
+		<view type='0' name='Ev_Start' mode='0' placement='LAAAAAAAAAABAAAA---------------------wUAAAAeAAAA6QUAAM8GAAA' zoom='75' scrollx='0' scrolly='0' flags='0' />
+	</layout>
+</document>
+</root>
