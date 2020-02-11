@@ -30,6 +30,7 @@ namespace LitePlacer
             MainForm = MainF;
             Com = new SerialComm(this, MainF);
             ComFeeder = new SerialComm(this, MainF);
+
             SlowXY = false;
             SlowZ = false;
             SlowA = false;
@@ -83,7 +84,7 @@ namespace LitePlacer
                     FeederConnected = true;
                     return true;
                 }
-                ComFeeder.Open(feederName);
+                ComFeeder.Open(feederName, 9600);
                 ErrorState = false;
                 Homing = false;
                 _readyEvent.Set();
@@ -109,7 +110,7 @@ namespace LitePlacer
                 Connected = true;
                 return true;
             }
-            Com.Open(name);
+            Com.Open(name, 115200);
             ErrorState = false;
             Homing = false;
             _readyEvent.Set();

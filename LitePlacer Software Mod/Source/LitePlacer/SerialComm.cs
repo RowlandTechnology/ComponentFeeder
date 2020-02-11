@@ -65,13 +65,13 @@ namespace LitePlacer
             }
         }
 
-        public bool Open(string Com)
+        public bool Open(string Com, int baud)
         {
             Close();
             try
             {
                 Port.PortName = Com;
-                Port.BaudRate = 115200;
+                Port.BaudRate = baud;
                 Port.Parity = Parity.None;
                 Port.StopBits = StopBits.One;
                 Port.DataBits = 8;
